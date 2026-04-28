@@ -1,3 +1,11 @@
+/* Plane 2 supplement font for 𫢶 (U+2C8B6) — subset of Plangothic, 468 bytes */
+@font-face {
+  font-family: 'TaigiExt';
+  src: url('fonts/plangothic-2c8b6.woff2') format('woff2');
+  unicode-range: U+2C8B6;
+  font-display: swap;
+}
+
 :root {
   --bg: #faf6f0;
   --bg-alt: #f2ece2;
@@ -10,10 +18,10 @@
   --border: #e0d8cb;
   --shadow: 0 1px 3px rgba(58, 52, 46, 0.08), 0 8px 24px rgba(58, 52, 46, 0.06);
   --shadow-hover: 0 4px 12px rgba(58, 52, 46, 0.12), 0 16px 40px rgba(58, 52, 46, 0.1);
-  --serif: 'Noto Serif TC', 'PingFang TC', 'Songti TC', serif;
-  --sans: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', system-ui, sans-serif;
-  --serif-ja: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
-  --sans-ja: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', system-ui, sans-serif;
+  --serif: 'Noto Serif TC', 'TaigiExt', 'Noto Serif HK', 'Source Han Serif TC', 'PingFang TC', 'Songti TC', serif;
+  --sans: 'Noto Sans TC', 'TaigiExt', 'Noto Sans HK', 'Source Han Sans TC', 'PingFang TC', 'Heiti TC', system-ui, sans-serif;
+  --serif-ja: 'Noto Serif JP', 'TaigiExt', 'Noto Serif HK', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --sans-ja: 'Noto Sans JP', 'TaigiExt', 'Noto Sans HK', 'Hiragino Sans', 'Yu Gothic', system-ui, sans-serif;
   --maxw-text: 760px;
   --maxw-wide: 1200px;
 }
