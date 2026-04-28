@@ -870,7 +870,7 @@ html[lang="ja"] .hero .epitaph { font-family: var(--serif-ja); }
 
 @media (max-width: 600px) {
   .gallery-videos { gap: 1rem; }
-  .gallery-video { max-width: 100%; }
+  .gallery-video { max-width: 240px; max-height: 65vh; }
 }
 
 /* ============ Lightbox ============ */
