@@ -147,7 +147,7 @@ img { max-width: 100%; display: block; }
   .nav-brand { font-size: 1rem; }
   .nav-links { gap: 0.85rem; flex-wrap: wrap; justify-content: center; }
   .nav-links a { font-size: 0.9rem; }
-  .lang-toggle { padding: 0.2rem 0.7rem; font-size: 0.78rem; }
+  .lang-toggle { padding: 0.35rem 0.9rem; font-size: 0.82rem; }
 }
 
 /* ============ Footer ============ */
@@ -426,6 +426,21 @@ html[lang="ja"] .hero .epitaph { font-family: var(--serif-ja); }
 
 .memorial table.program tr:last-child td { border-bottom: none; }
 
+.memorial .program-note {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .memorial .program-note {
+    text-align: left;
+    font-size: 0.85rem;
+    line-height: 1.85;
+  }
+}
+
 .memorial .info-line {
   display: flex;
   flex-wrap: wrap;
@@ -518,6 +533,113 @@ html[lang="ja"] .hero .epitaph { font-family: var(--serif-ja); }
   color: var(--accent-dark);
   min-width: 110px;
   font-family: var(--serif);
+}
+
+/* Memorial page — mobile adaptation */
+@media (max-width: 600px) {
+  .memorial { padding: 2.5rem 0 1rem; }
+  .memorial.container { padding-left: 1rem; padding-right: 1rem; }
+
+  .memorial header.page-header { margin-bottom: 2.5rem; }
+  .memorial header.page-header h1 {
+    font-size: 1.45rem;
+    line-height: 1.55;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.75rem;
+  }
+  .memorial .meta { font-size: 0.875rem; line-height: 1.7; }
+
+  .memorial section { margin-bottom: 2.75rem; }
+
+  .memorial h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.05em;
+  }
+  .memorial h2::after { margin: 0.75rem auto 1.5rem; }
+
+  .memorial h3 {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin: 1.5rem 0 0.6rem;
+    padding-left: 0.6rem;
+    border-left-width: 2px;
+    word-break: break-word;
+  }
+
+  .memorial blockquote {
+    padding: 0.9rem 1rem;
+    font-size: 0.92rem;
+    line-height: 1.85;
+    margin: 0.75rem 0;
+  }
+
+  .memorial .info-line {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .memorial table.program {
+    font-size: 0.85rem;
+    border-radius: 6px;
+  }
+  .memorial table.program th,
+  .memorial table.program td {
+    padding: 0.55rem 0.7rem;
+    line-height: 1.55;
+    word-break: break-word;
+  }
+  .memorial table.program th { font-size: 0.85rem; }
+
+  .memorial .hymn {
+    padding: 1rem 1rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.93rem;
+  }
+  .memorial .hymn ol { padding-left: 1.25rem; }
+  .memorial .hymn li {
+    line-height: 1.85;
+    margin-bottom: 0.85rem;
+  }
+
+  .memorial .credit { font-size: 0.85rem; }
+
+  .memorial .lyrics-bilingual { gap: 1rem; }
+  .memorial .lyrics-bilingual h4 {
+    font-size: 0.92rem;
+    margin-bottom: 0.6rem;
+  }
+  .memorial .lyrics-bilingual p {
+    font-size: 0.92rem;
+    line-height: 1.85;
+  }
+
+  .memorial .thanks {
+    padding: 1.25rem 1rem;
+    font-size: 0.93rem;
+    line-height: 2;
+    border-radius: 6px;
+  }
+  .memorial .thanks .signoff { margin-top: 1rem; }
+
+  .memorial .bio p {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    text-align: left;
+  }
+
+  .memorial .bio ul li {
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.6rem 0;
+  }
+  .memorial .bio ul li strong {
+    min-width: 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
 }
 
 /* ============ Gallery ============ */
