@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>相簿｜温啓源紀念</title>
+<title data-i18n="page.title.gallery">相簿｜温啓源紀念</title>
+<script>(function(){try{var l=localStorage.getItem('lang');if(l==='zh'||l==='ja')document.documentElement.lang=l;}catch(e){}})();</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+JP:wght@400;500;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <span class="nav-brand">温啓源紀念</span>
+    <span class="nav-brand" data-i18n="brand">温啓源紀念</span>
     <ul class="nav-links">
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="memorial.html">紀念禮拜</a></li>
-      <li><a href="gallery.html" class="active">相簿</a></li>
-      <li><a href="RoadWatcher-master/index.html">事業</a></li>
+      <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+      <li><a href="memorial.html" data-i18n="nav.memorial">紀念禮拜</a></li>
+      <li><a href="gallery.html" class="active" data-i18n="nav.gallery">相簿</a></li>
+      <li><button type="button" class="lang-toggle" data-i18n="lang.toggle">日本語</button></li>
     </ul>
   </div>
 </nav>
 
 <main class="gallery-page container-wide">
   <header class="page-header">
-    <h1>相簿</h1>
-    <p>共 <span id="photo-count">—</span> 張照片　·　點擊放大瀏覽</p>
+    <h1 data-i18n="gallery.h1">相簿</h1>
+    <p>
+      <span data-i18n="gallery.subtitle.prefix">共 </span><span id="photo-count">—</span><span data-i18n="gallery.subtitle.suffix"> 張照片　·　點擊放大瀏覽</span>
+    </p>
   </header>
 
-  <!-- Carousel -->
   <div class="carousel" id="carousel" role="region" aria-label="輪播">
     <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="上一張">‹</button>
     <button class="carousel-btn carousel-next" id="carousel-next" aria-label="下一張">›</button>
     <div class="carousel-counter" id="carousel-counter">— / —</div>
   </div>
 
-  <h2 class="gallery-section-title">所有照片</h2>
+  <h2 class="gallery-section-title" data-i18n="gallery.section.all">所有照片</h2>
 
   <div class="gallery-grid" id="gallery-grid"></div>
 </main>
 
-<!-- Lightbox -->
 <div class="lightbox" id="lightbox" role="dialog" aria-label="照片檢視">
   <img class="lightbox-img" id="lightbox-img" alt="">
   <button class="lightbox-btn lightbox-close" id="lightbox-close" aria-label="關閉">×</button>
@@ -51,7 +53,7 @@
 </div>
 
 <footer class="footer">
-  <p>謹以此網站，懷念  温啓源弟兄</p>
+  <p data-i18n="footer.line1">謹以此網站，懷念  温啓源弟兄</p>
   <p>1967 — 2026</p>
   <div class="footer-social">
     <a href="https://www.facebook.com/onsan.onsan.2025" target="_blank" rel="noopener" aria-label="Facebook">
@@ -61,5 +63,6 @@
 </footer>
 
 <script src="gallery.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>

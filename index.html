@@ -1,34 +1,42 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>温啓源紀念</title>
+<meta name="description" content="温啓源紀念網頁 · 1967 — 2026 · 紀念禮拜程序、生平略歷與相簿">
+<meta property="og:title" content="温啓源紀念">
+<meta property="og:description" content="1967 — 2026　謹以此網站，懷念  温啓源弟兄">
+<meta property="og:type" content="website">
+<meta property="og:image" content="pic/web/20241215聯合慶生ATT瀧厚_1.webp">
+<title data-i18n="page.title.index">温啓源紀念</title>
+<script>(function(){try{var l=localStorage.getItem('lang');if(l==='zh'||l==='ja')document.documentElement.lang=l;}catch(e){}})();</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+JP:wght@400;500;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="pic/web/20241215聯合慶生ATT瀧厚_1.webp">
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <span class="nav-brand">温啓源紀念</span>
+    <span class="nav-brand" data-i18n="brand">温啓源紀念</span>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">首頁</a></li>
-      <li><a href="memorial.html">紀念禮拜</a></li>
-      <li><a href="gallery.html">相簿</a></li>
-      <li><a href="RoadWatcher-master/index.html">事業</a></li>
+      <li><a href="index.html" class="active" data-i18n="nav.home">首頁</a></li>
+      <li><a href="memorial.html" data-i18n="nav.memorial">紀念禮拜</a></li>
+      <li><a href="gallery.html" data-i18n="nav.gallery">相簿</a></li>
+      <li><button type="button" class="lang-toggle" data-i18n="lang.toggle">日本語</button></li>
     </ul>
   </div>
 </nav>
 
 <section class="hero">
   <div>
-    <img src="pic/web/IMG_7723.webp" alt="温啓源" class="hero-portrait" onerror="this.style.display='none'">
+    <img src="pic/web/20241215聯合慶生ATT瀧厚_1.webp" alt="温啓源" class="hero-portrait" onerror="this.style.display='none'">
     <h1>温 啓 源</h1>
     <p class="dates">1967.12.17 — 2026</p>
-    <p class="epitaph">
+    <p class="epitaph" data-i18n="hero.epitaph" data-i18n-html>
       願他在天上依然開朗喜樂，<br>
       即使話多，也不再有人對他說「稍微安靜一點」。<br>
       或許此刻，他正熱情地與新朋友開心交談分享笑聲。
@@ -40,18 +48,18 @@
   <div class="cards-grid">
     <a class="card" href="memorial.html">
       <div class="card-icon">✟</div>
-      <h3>紀念禮拜</h3>
-      <p>2026 年 4 月 30 日<br>告別禮拜程序與生平略歷</p>
+      <h3 data-i18n="card.memorial.title">紀念禮拜</h3>
+      <p data-i18n="card.memorial.body" data-i18n-html>2026 年 4 月 30 日<br>告別禮拜程序與生平略歷</p>
     </a>
     <a class="card" href="gallery.html">
       <div class="card-icon">❀</div>
-      <h3>相簿</h3>
-      <p>家族與朋友之間<br>那些笑聲不斷的時光</p>
+      <h3 data-i18n="card.gallery.title">相簿</h3>
+      <p data-i18n="card.gallery.body" data-i18n-html>家族與朋友之間<br>那些笑聲不斷的時光</p>
     </a>
     <a class="card" href="RoadWatcher-master/index.html">
       <div class="card-icon">⚙</div>
       <h3>RoadWatchR</h3>
-      <p>羅多瓦恰三佑國際有限公司<br>汽車 A 柱盲區專利產品</p>
+      <p data-i18n="card.rw.body" data-i18n-html>羅多瓦恰三佑國際有限公司<br>汽車 A 柱盲區專利產品</p>
     </a>
     <a class="card" href="https://www.facebook.com/onsan.onsan.2025" target="_blank" rel="noopener">
       <div class="card-icon">
@@ -60,13 +68,13 @@
         </svg>
       </div>
       <h3>Facebook</h3>
-      <p>到 Facebook 留言、追思<br>與分享你和啓源的回憶</p>
+      <p data-i18n="card.fb.body" data-i18n-html>到 Facebook 留言、追思<br>與分享你和啓源的回憶</p>
     </a>
   </div>
 </section>
 
 <footer class="footer">
-  <p>謹以此網站，懷念  温啓源弟兄</p>
+  <p data-i18n="footer.line1">謹以此網站，懷念  温啓源弟兄</p>
   <p>1967 — 2026</p>
   <div class="footer-social">
     <a href="https://www.facebook.com/onsan.onsan.2025" target="_blank" rel="noopener" aria-label="Facebook">
@@ -75,5 +83,6 @@
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 </body>
 </html>

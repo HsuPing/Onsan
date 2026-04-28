@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>紀念禮拜｜温啓源紀念</title>
+<title data-i18n="page.title.memorial">紀念禮拜｜温啓源紀念</title>
+<script>(function(){try{var l=localStorage.getItem('lang');if(l==='zh'||l==='ja')document.documentElement.lang=l;}catch(e){}})();</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+JP:wght@400;500;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <span class="nav-brand">温啓源紀念</span>
+    <span class="nav-brand" data-i18n="brand">温啓源紀念</span>
     <ul class="nav-links">
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="memorial.html" class="active">紀念禮拜</a></li>
-      <li><a href="gallery.html">相簿</a></li>
-      <li><a href="RoadWatcher-master/index.html">事業</a></li>
+      <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+      <li><a href="memorial.html" class="active" data-i18n="nav.memorial">紀念禮拜</a></li>
+      <li><a href="gallery.html" data-i18n="nav.gallery">相簿</a></li>
+      <li><button type="button" class="lang-toggle" data-i18n="lang.toggle">日本語</button></li>
     </ul>
   </div>
 </nav>
@@ -26,16 +28,16 @@
 <main class="memorial container">
 
   <header class="page-header">
-    <h1>主內故 温啓源弟兄告別禮拜</h1>
+    <h1 data-i18n="memorial.title">主內故 温啓源弟兄告別禮拜</h1>
     <div class="meta">
-      <p>主後 2026 年 4 月 30 日　上午 9:00</p>
-      <p>台北市立懷愛館景行樓 1 樓至忠 4 廳</p>
+      <p data-i18n="memorial.date">主後 2026 年 4 月 30 日　上午 9:00</p>
+      <p data-i18n="memorial.location">台北市立懷愛館景行樓 1 樓至忠 4 廳</p>
     </div>
   </header>
 
   <!-- 入殮禮拜 -->
   <section>
-    <h2>入殮禮拜</h2>
+    <h2 data-i18n="section.encoffin">入殮禮拜</h2>
 
     <h3>聖經｜哥林多前書十五章 20-28 節｜曾昭瑞牧師</h3>
     <blockquote>
@@ -48,7 +50,7 @@
 
   <!-- 告別禮拜 -->
   <section>
-    <h2>告別禮拜</h2>
+    <h2 data-i18n="section.farewell">告別禮拜</h2>
 
     <div class="info-line">
       <span><strong>主禮：</strong>曾昭瑞牧師</span>
@@ -177,7 +179,7 @@
 
   <!-- 家屬謝詞 -->
   <section>
-    <h2>家屬謝詞</h2>
+    <h2 data-i18n="section.thanks">家屬謝詞</h2>
     <div class="thanks">
       <p>啓源自發現罹患慢性淋巴性白血病（血癌）到蒙主恩召這 4 年中，承蒙教會牧長兄姐、親朋好友的關懷與代禱，以及台大醫院侯信安醫師的醫療團隊全力的治療，家人雖萬般不捨，他仍走完人生最後一程回歸天家，最終歸入主懷。</p>
       <p>我們家屬僅此致上十二萬分的謝意。</p>
@@ -187,8 +189,8 @@
   </section>
 
   <!-- 生平略歷 -->
-  <section class="bio">
-    <h2>生平略歷</h2>
+  <section class="bio only-zh">
+    <h2 data-i18n="section.bio">生平略歷</h2>
     <p>温啓源，於 1967 年 12 月 17 日出生於嘉義民雄。</p>
     <p>父母親都是虔誠的基督徒。有一位姊姊及二位妹妹，是家中獨子。手足情深，家人彼此扶持相伴成長。</p>
     <p>十歲時，全家隨父親北上經商，後定居於台北吳興街地區。自幼於吳興教會接受主日學教育、做禮拜、禱告、吟唱詩歌，這段信仰基礎成為他日後常常津津樂道滿懷感恩的美好回憶，更豐富了喜樂且精彩的童年及青少年時光。</p>
@@ -211,8 +213,8 @@
   </section>
 
   <!-- 日文略歴 -->
-  <section class="bio">
-    <h2>略歴（日本語）</h2>
+  <section class="bio only-ja">
+    <h2 data-i18n="section.bio">略歴</h2>
     <p>温啓源兄弟は、1967 年 12 月 17 日、台湾嘉義県民雄に生まれました。両親はともに敬虔なキリスト教徒で、上に姉が一人、下に妹が二人おり、彼は家族の中で唯一の男児でした。兄弟姉妹の絆は深く、家族は互いに支え合いながら成長しました。</p>
     <p>10 歳の時、父親の事業のため家族で台北へ移住し、その後は呉興街周辺に定住しました。幼い頃より呉興教会にて日曜学校の教育を受け、礼拝や祈り、賛美歌に親しみました。この信仰生活は、後に彼がたびたび感謝とともに語る大切な思い出となり、喜びに満ちた少年時代・青年時代を支えました。</p>
     <p>兵役を終えた後、詹燦東牧師の紹介により、日本・徳島の建教協力校にて働きながら学びました。1989 年から 1995 年にかけて、徳島工業短期大学および京都外国語大学を卒業し、その後は現地で就職しました。</p>
@@ -253,7 +255,7 @@
 
   <!-- 火化禮拜 -->
   <section>
-    <h2>火化禮拜</h2>
+    <h2 data-i18n="section.cremation">火化禮拜</h2>
 
     <h3>聖詩 第 160 首〈時刻我需要主〉｜會眾</h3>
     <div class="hymn">
@@ -287,7 +289,7 @@
 
   <!-- 安葬禮拜 -->
   <section>
-    <h2>安葬禮拜</h2>
+    <h2 data-i18n="section.burial">安葬禮拜</h2>
 
     <div class="info-line">
       <span><strong>地點：</strong>金山基督教平安園</span>
@@ -321,7 +323,7 @@
 </main>
 
 <footer class="footer">
-  <p>謹以此網站，懷念  温啓源弟兄</p>
+  <p data-i18n="footer.line1">謹以此網站，懷念  温啓源弟兄</p>
   <p>1967 — 2026</p>
   <div class="footer-social">
     <a href="https://www.facebook.com/onsan.onsan.2025" target="_blank" rel="noopener" aria-label="Facebook">
@@ -330,5 +332,6 @@
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 </body>
 </html>

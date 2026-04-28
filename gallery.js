@@ -125,6 +125,14 @@ function initCarousel() {
   carousel.addEventListener("mouseenter", stop);
   carousel.addEventListener("mouseleave", start);
 
+  let touchX = 0;
+  carousel.addEventListener("touchstart", (e) => { touchX = e.touches[0].clientX; stop(); }, { passive: true });
+  carousel.addEventListener("touchend", (e) => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) { dx > 0 ? show(cur - 1) : show(cur + 1); }
+    start();
+  });
+
   start();
 }
 
