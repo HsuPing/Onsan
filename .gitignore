@@ -1,0 +1,8 @@
+.DS_Store
+
+# Original photos (52MB) — only the WebP versions in pic/web/ are deployed
+pic/*.JPG
+pic/*.jpg
+pic/*.jpeg
+pic/*.HEIC
+pic/*.heic
