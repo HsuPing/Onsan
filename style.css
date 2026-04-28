@@ -262,6 +262,35 @@ img { max-width: 100%; display: block; }
   color: var(--accent);
 }
 
+.hero-motto {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  letter-spacing: 0.18em;
+  color: var(--text);
+  line-height: 2;
+  margin: 0.75rem auto 1.75rem;
+  max-width: 600px;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.hero-motto::before,
+.hero-motto::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.5;
+  margin: 0 auto 0.6rem;
+}
+
+.hero-motto::after {
+  margin: 0.6rem auto 0;
+}
+
+html[lang="ja"] .hero-motto { font-family: var(--serif-ja); letter-spacing: 0.08em; }
+
 .hero .epitaph {
   max-width: 540px;
   margin: 0 auto;
@@ -276,6 +305,12 @@ html[lang="ja"] .hero .epitaph { font-family: var(--serif-ja); }
 @media (max-width: 600px) {
   .hero-portrait { width: 170px; height: 170px; margin-bottom: 1.5rem; }
   .hero { padding: 4.5rem 1.5rem 3rem; min-height: 60vh; }
+  .hero-motto {
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    margin: 0.5rem auto 1.5rem;
+  }
+  html[lang="ja"] .hero-motto { font-size: 0.95rem; letter-spacing: 0.05em; }
 }
 
 /* ============ Section cards (index) ============ */
