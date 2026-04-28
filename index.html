@@ -33,7 +33,7 @@
 
 <section class="hero">
   <div>
-    <img src="pic/web/20241215聯合慶生ATT瀧厚_1.webp" alt="温啓源" class="hero-portrait" onerror="this.style.display='none'">
+    <img src="pic/web/20241215聯合慶生ATT瀧厚_1.webp" alt="温啓源" class="hero-portrait" id="hero-portrait" onerror="this.style.display='none'">
     <h1>温 啓 源</h1>
     <p class="dates">1967.12.17 — 2026.04.21</p>
     <p class="hero-motto" data-i18n="hero.motto">幫人難處　記人好處　識人長處</p>
@@ -74,6 +74,11 @@
   </div>
 </section>
 
+<div class="lightbox" id="hero-lightbox" role="dialog" aria-label="放大檢視">
+  <img class="lightbox-img" id="hero-lightbox-img" alt="温啓源">
+  <button class="lightbox-btn lightbox-close" id="hero-lightbox-close" aria-label="關閉">×</button>
+</div>
+
 <footer class="footer">
   <p data-i18n="footer.line1">謹以此網站，懷念  温啓源弟兄</p>
   <p>1967 — 2026</p>
@@ -85,5 +90,32 @@
 </footer>
 
 <script src="i18n.js"></script>
+<script>
+(function () {
+  var portrait = document.getElementById('hero-portrait');
+  var lb = document.getElementById('hero-lightbox');
+  var lbImg = document.getElementById('hero-lightbox-img');
+  var closeBtn = document.getElementById('hero-lightbox-close');
+  if (!portrait || !lb) return;
+
+  function open() {
+    lbImg.src = portrait.src;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  portrait.style.cursor = 'pointer';
+  portrait.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (lb.classList.contains('open') && e.key === 'Escape') close();
+  });
+})();
+</script>
 </body>
 </html>

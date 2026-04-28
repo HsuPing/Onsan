@@ -234,6 +234,15 @@ img { max-width: 100%; display: block; }
     0 0 0 7px rgba(139, 115, 85, 0.2),
     0 12px 40px rgba(58, 52, 46, 0.15);
   animation: portraitFadeIn 1s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-portrait:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 0 6px var(--bg-card),
+    0 0 0 7px rgba(139, 115, 85, 0.35),
+    0 16px 48px rgba(58, 52, 46, 0.22);
 }
 
 @keyframes portraitFadeIn {
