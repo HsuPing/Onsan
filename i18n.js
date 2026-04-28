@@ -40,6 +40,8 @@ const I18N = {
     'gallery.subtitle.prefix': '共 ',
     'gallery.subtitle.suffix': ' 張照片　·　點擊放大瀏覽',
     'gallery.section.all': '所有照片',
+    'gallery.section.videos': '影像追思',
+    'gallery.videos.hint': '點擊播放（含聲音）',
 
     // 入殮禮拜
     'h3.encoffin.scripture': '聖經｜哥林多前書十五章 20-28 節｜曾昭瑞牧師',
@@ -133,6 +135,8 @@ const I18N = {
     'gallery.subtitle.prefix': '全 ',
     'gallery.subtitle.suffix': ' 枚　·　クリックで拡大',
     'gallery.section.all': 'すべての写真',
+    'gallery.section.videos': '映像で偲ぶ',
+    'gallery.videos.hint': 'クリックで再生（音声あり）',
 
     // 納棺礼拝
     'h3.encoffin.scripture': '聖書｜コリントの信徒への手紙一 15:20-28｜曾昭瑞牧師',

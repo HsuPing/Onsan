@@ -66,10 +66,37 @@ const PHOTOS = [
   "20251227聯合慶生_1.webp",
   "阿嬤自摸🀄️_1.webp",
   "IMG_6363.webp",
+  "IMG_20160926_195427.webp",
+  "IMG_20160926_195733.webp",
+  "IMG_20170326_202805.webp",
+  "IMG_20180606_095353.webp",
+  "IMG_20180606_154646.webp",
+  "IMG_20190325_145815.webp",
+  "327068.webp",
+  "327069.webp",
+  "327147.webp",
+  "327217.webp",
+  "327557.webp",
+  "327558.webp",
+  "327559.webp",
+  "327561.webp",
+  "327562.webp",
+  "327563.webp",
+  "327564.webp",
+  "S__2293810_0.webp",
+  "S__2293811_0.webp",
+  "S__2293812_0.webp",
+  "S__2293813_0.webp",
+  "S__2293814_0.webp",
+  "S__2293818_0.webp",
+  "S__2293819_0.webp",
+  "S__2293820_0.webp",
+  "S__2375878.webp",
 ];
 
 const PIC_PATH = "pic/web/";
 const CAROUSEL_INTERVAL = 4500; // ms
+const CAROUSEL_PRELOAD_RADIUS = 1; // load current ± N neighbors
 
 const pathOf = (name) => PIC_PATH + name;
 
@@ -89,31 +116,50 @@ function initCarousel() {
   const prevBtn = document.getElementById("carousel-prev");
   const nextBtn = document.getElementById("carousel-next");
 
-  // Build slides
+  const total = PHOTOS.length;
+  const slides = [];
+  const imgs = [];
+
+  // Build empty slides (no src yet)
   PHOTOS.forEach((name, i) => {
     const slide = document.createElement("div");
     slide.className = "carousel-slide" + (i === 0 ? " active" : "");
     const img = document.createElement("img");
-    img.src = pathOf(name);
     img.alt = "";
-    img.loading = i === 0 ? "eager" : "lazy";
+    img.decoding = "async";
+    img.dataset.src = pathOf(name);
     slide.appendChild(img);
     slide.addEventListener("click", () => window.openLightbox(i));
     carousel.insertBefore(slide, prevBtn);
+    slides.push(slide);
+    imgs.push(img);
   });
 
+  function ensureLoaded(idx) {
+    const img = imgs[idx];
+    if (img && !img.src && img.dataset.src) {
+      img.src = img.dataset.src;
+    }
+  }
+
+  function preloadAround(idx) {
+    for (let d = -CAROUSEL_PRELOAD_RADIUS; d <= CAROUSEL_PRELOAD_RADIUS; d++) {
+      ensureLoaded((idx + d + total) % total);
+    }
+  }
+
   let cur = 0;
-  const total = PHOTOS.length;
 
   function show(idx) {
-    const slides = carousel.querySelectorAll(".carousel-slide");
     slides[cur].classList.remove("active");
     cur = (idx + total) % total;
     slides[cur].classList.add("active");
     counter.textContent = `${cur + 1} / ${total}`;
+    preloadAround(cur);
   }
 
-  show(0);
+  preloadAround(0);
+  counter.textContent = `1 / ${total}`;
 
   let timer;
   function start() { timer = setInterval(() => show(cur + 1), CAROUSEL_INTERVAL); }
@@ -136,20 +182,45 @@ function initCarousel() {
   start();
 }
 
-/* ---------------- Flat grid ---------------- */
+/* ---------------- Flat grid (progressive load via IntersectionObserver) ---------------- */
 function initGrid() {
   const grid = document.getElementById("gallery-grid");
-  PHOTOS.forEach((name, i) => {
+  const supportsIO = "IntersectionObserver" in window;
+
+  const items = PHOTOS.map((name, i) => {
     const item = document.createElement("div");
     item.className = "gallery-item";
     const img = document.createElement("img");
-    img.src = pathOf(name);
     img.alt = name;
+    img.decoding = "async";
     img.loading = "lazy";
+    img.dataset.src = pathOf(name);
+    img.addEventListener("load", () => item.classList.add("loaded"));
     item.appendChild(img);
     item.addEventListener("click", () => window.openLightbox(i));
     grid.appendChild(item);
+    return img;
   });
+
+  if (!supportsIO) {
+    // Fallback: just set all srcs (browser native lazy will still defer offscreen)
+    items.forEach((img) => { img.src = img.dataset.src; });
+    return;
+  }
+
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const img = entry.target;
+      if (img.dataset.src) {
+        img.src = img.dataset.src;
+        img.removeAttribute("data-src");
+      }
+      observer.unobserve(img);
+    });
+  }, { rootMargin: "300px 0px", threshold: 0.01 });
+
+  items.forEach((img) => io.observe(img));
 }
 
 /* ---------------- Lightbox ---------------- */

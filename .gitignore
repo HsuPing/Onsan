@@ -6,3 +6,6 @@ pic/*.jpg
 pic/*.jpeg
 pic/*.HEIC
 pic/*.heic
+
+# Second batch of originals — only the WebP versions in pic/web/ are deployed
+pic2/
