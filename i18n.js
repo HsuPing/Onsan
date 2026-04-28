@@ -40,6 +40,56 @@ const I18N = {
     'gallery.subtitle.prefix': '共 ',
     'gallery.subtitle.suffix': ' 張照片　·　點擊放大瀏覽',
     'gallery.section.all': '所有照片',
+
+    // 入殮禮拜
+    'h3.encoffin.scripture': '聖經｜哥林多前書十五章 20-28 節｜曾昭瑞牧師',
+    'h3.encoffin.consolation': '安慰的話｜曾昭瑞牧師',
+    'h3.encoffin.prayer': '祈禱｜曾昭瑞牧師',
+
+    // 告別禮拜
+    'memorial.officiant': '主禮：',
+    'memorial.host': '司禮：',
+    'memorial.pianist': '司琴：',
+    'memorial.location-label': '地點：',
+    'memorial.send-off': '送行順序：1. 十字架　2. 牧師、長老　3. 遺像　4. 靈柩　5. 親友來賓',
+    'h3.farewell.hymn590': '聖詩 第 590 首〈至好朋友就是耶穌〉',
+    'h3.farewell.scripture': '聖經｜馬太福音十一章 28-30 節',
+    'h3.farewell.consolation': '慰詩〈生命（いのち）〉',
+    'h3.farewell.hymn613': '聖詩 第 613 首〈有時咱經過美麗清靜河墘〉',
+    'h3.farewell.doxology': '頌榮 第 397 首〈願主賜福保護你〉',
+
+    // 火化禮拜
+    'h3.cremation.hymn160': '聖詩 第 160 首〈時刻我需要主〉｜會眾',
+    'h3.cremation.scripture': '聖經｜羅馬書八章 10-11 節｜曾昭瑞牧師',
+    'h3.cremation.message': '信息｜曾昭瑞牧師',
+    'h3.cremation.prayer': '禱告｜曾昭瑞牧師',
+
+    // 安葬禮拜
+    'h3.burial.hymn536': '聖詩 第 536 首〈天頂大開恩典的門〉｜會眾',
+    'h3.burial.scripture': '聖經｜詩篇十六篇 9-11 節｜曾昭瑞牧師',
+    'h3.burial.prayer': '祈禱｜曾昭瑞牧師',
+    'h3.burial.placement': '安放骨灰｜遺族代表',
+    'h3.burial.benediction': '祝禱｜曾昭瑞牧師',
+
+    // Program table
+    'prog.col.item': '程序',
+    'prog.col.who': '擔任',
+    'prog.r1.a': '序樂', 'prog.r1.b': '司琴',
+    'prog.r2.a': '宣召', 'prog.r2.b': '司禮',
+    'prog.r3.a': '聖詩 第 590 首〈至好朋友就是耶穌〉', 'prog.r3.b': '會眾',
+    'prog.r4.a': '祈禱', 'prog.r4.b': '國際日語教會 伊藤初牧師',
+    'prog.r5.a': '聖經 馬太福音十一章 28-30 節', 'prog.r5.b': '六張犁教會 張昱庭牧師',
+    'prog.r6.a': '慰詩〈生命（いのち）〉', 'prog.r6.b': '國際日語教會 有志',
+    'prog.r7.a': '講道〈到我這裡來〉', 'prog.r7.b': '曾昭瑞牧師',
+    'prog.r8.a': '祈禱', 'prog.r8.b': '曾昭瑞牧師',
+    'prog.r9.a': '聖詩 第 613 首〈有時咱經過美麗清靜河墘〉', 'prog.r9.b': '會眾',
+    'prog.r10.a': '懷念遺影（播放追思影片）', 'prog.r10.b': '會眾',
+    'prog.r11.a': '靜默追思（追思故人並為遺族祈禱）', 'prog.r11.b': '會眾',
+    'prog.r12.a': '謝詞', 'prog.r12.b': '遺族代表',
+    'prog.r13.a': '報告', 'prog.r13.b': '司禮',
+    'prog.r14.a': '頌榮 第 397 首〈願主賜福保護你〉', 'prog.r14.b': '會眾',
+    'prog.r15.a': '祝禱', 'prog.r15.b': '主禮',
+    'prog.r16.a': '殿樂', 'prog.r16.b': '司琴',
   },
 
   ja: {
@@ -83,6 +133,56 @@ const I18N = {
     'gallery.subtitle.prefix': '全 ',
     'gallery.subtitle.suffix': ' 枚　·　クリックで拡大',
     'gallery.section.all': 'すべての写真',
+
+    // 納棺礼拝
+    'h3.encoffin.scripture': '聖書｜コリントの信徒への手紙一 15:20-28｜曾昭瑞牧師',
+    'h3.encoffin.consolation': '慰めの言葉｜曾昭瑞牧師',
+    'h3.encoffin.prayer': '祈祷｜曾昭瑞牧師',
+
+    // 告別礼拝
+    'memorial.officiant': '司式：',
+    'memorial.host': '司会：',
+    'memorial.pianist': '奏楽：',
+    'memorial.location-label': '場所：',
+    'memorial.send-off': '送葬の順序：1. 十字架　2. 牧師・長老　3. 遺影　4. 棺　5. ご親族・参列者',
+    'h3.farewell.hymn590': '讃美歌 第590番〈至好朋友就是耶穌〉',
+    'h3.farewell.scripture': '聖書｜マタイによる福音書 11:28-30',
+    'h3.farewell.consolation': '慰めの賛美〈生命（いのち）〉',
+    'h3.farewell.hymn613': '讃美歌 第613番〈有時咱經過美麗清靜河墘〉',
+    'h3.farewell.doxology': '頌栄 第397番〈願主賜福保護你〉',
+
+    // 火葬礼拝
+    'h3.cremation.hymn160': '讃美歌 第160番〈時刻我需要主〉｜会衆',
+    'h3.cremation.scripture': '聖書｜ローマの信徒への手紙 8:10-11｜曾昭瑞牧師',
+    'h3.cremation.message': 'メッセージ｜曾昭瑞牧師',
+    'h3.cremation.prayer': '祈祷｜曾昭瑞牧師',
+
+    // 埋葬礼拝
+    'h3.burial.hymn536': '讃美歌 第536番〈天頂大開恩典的門〉｜会衆',
+    'h3.burial.scripture': '聖書｜詩編 16:9-11｜曾昭瑞牧師',
+    'h3.burial.prayer': '祈祷｜曾昭瑞牧師',
+    'h3.burial.placement': '納骨｜遺族代表',
+    'h3.burial.benediction': '祝祷｜曾昭瑞牧師',
+
+    // 式次第表
+    'prog.col.item': '式次第',
+    'prog.col.who': '担当',
+    'prog.r1.a': '前奏', 'prog.r1.b': '奏楽',
+    'prog.r2.a': '招きの言葉', 'prog.r2.b': '司会',
+    'prog.r3.a': '讃美歌 第590番〈至好朋友就是耶穌〉', 'prog.r3.b': '会衆',
+    'prog.r4.a': '祈祷', 'prog.r4.b': '国際日本語教会 伊藤初牧師',
+    'prog.r5.a': '聖書 マタイ 11:28-30', 'prog.r5.b': '六張犁教会 張昱庭牧師',
+    'prog.r6.a': '慰めの賛美〈生命（いのち）〉', 'prog.r6.b': '国際日本語教会 有志',
+    'prog.r7.a': '説教〈到我這裡來〉', 'prog.r7.b': '曾昭瑞牧師',
+    'prog.r8.a': '祈祷', 'prog.r8.b': '曾昭瑞牧師',
+    'prog.r9.a': '讃美歌 第613番〈有時咱經過美麗清靜河墘〉', 'prog.r9.b': '会衆',
+    'prog.r10.a': '追悼動画の上映', 'prog.r10.b': '会衆',
+    'prog.r11.a': '黙祷（故人を偲び、ご遺族のために祈る）', 'prog.r11.b': '会衆',
+    'prog.r12.a': '謝辞', 'prog.r12.b': '遺族代表',
+    'prog.r13.a': '報告', 'prog.r13.b': '司会',
+    'prog.r14.a': '頌栄 第397番〈願主賜福保護你〉', 'prog.r14.b': '会衆',
+    'prog.r15.a': '祝祷', 'prog.r15.b': '司式',
+    'prog.r16.a': '後奏', 'prog.r16.b': '奏楽',
   },
 };
 
