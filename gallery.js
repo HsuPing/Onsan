@@ -93,6 +93,7 @@ const PHOTOS = [
   "S__2293820_0.webp",
   "S__2375878.webp",
   "S__2375949.webp",
+  "S__159023192.webp",
 ];
 
 const PIC_PATH = "pic/web/";
