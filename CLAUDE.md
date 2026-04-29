@@ -14,7 +14,7 @@
 | --- | --- |
 | `index.html` | 首頁。Hero（大頭照、姓名、生卒、座右銘、悼詞）+ 四張卡片（紀念禮拜／相簿／RoadWatchR／Facebook） |
 | `memorial.html` | 告別禮拜程序：入殮／告別／火化／安葬／謝詞／生平略歷（中）／略歴（日）|
-| `gallery.html` | 上方輪播 + 下方平鋪 92 張照片（含 lightbox）+ 末段「影像追思」兩支家庭影片 |
+| `gallery.html` | 上方輪播 + 下方平鋪 93 張照片（含 lightbox）+ 末段「影像追思」兩支家庭影片 |
 | `RoadWatcher-master/` | 使用者以前幫舅舅做的產品介紹站（汽車 A 柱盲區專利），保留現狀，從首頁連過去 |
 | `memorial.md` | memorial.html 的 markdown 來源（人工同步，編輯 HTML 為主） |
 
@@ -66,7 +66,7 @@ JP 字型在 `html[lang="ja"]` 時自動切換。
 
 ## 相簿設定
 
-- 92 張 WebP 在 `pic/web/`（已 commit）
+- 93 張 WebP 在 `pic/web/`（已 commit）
 - 原圖（`.heic`/`.JPG`）在 `pic/` 根目錄，被 `.gitignore` 排除（52MB 太大）
 - 第二批原圖在 `pic2/`，也被 `.gitignore` 排除
 - 兩支家庭影片在 `media/`（video1.mp4 48s/12MB、video2.mp4 17s/4.4MB），含同名 `.jpg` poster，皆已 commit
