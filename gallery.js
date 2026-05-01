@@ -83,7 +83,6 @@ const PHOTOS = [
   "327562.webp",
   "327563.webp",
   "327564.webp",
-  "S__159023192.webp",
 ];
 
 const PIC_PATH = "pic/web/";
