@@ -9,3 +9,7 @@ pic/*.heic
 
 # Second batch of originals — only the WebP versions in pic/web/ are deployed
 pic2/
+
+# Source video files — only the encoded mp4 in media/ is deployed
+*.MOV
+*.mov
