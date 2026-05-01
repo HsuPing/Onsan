@@ -850,26 +850,19 @@ html[lang="ja"] .hero .epitaph { font-family: var(--serif-ja); }
 }
 
 .gallery-videos {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  max-width: 540px;
+  max-width: 960px;
   margin: 0 auto 1rem;
 }
 
 .gallery-video {
   width: 100%;
   height: auto;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 16 / 9;
   background: #000;
   border-radius: 8px;
   box-shadow: var(--shadow);
-  object-fit: cover;
+  object-fit: contain;
   display: block;
-}
-
-@media (max-width: 400px) {
-  .gallery-videos { gap: 0.5rem; }
 }
 
 /* ============ Lightbox ============ */
